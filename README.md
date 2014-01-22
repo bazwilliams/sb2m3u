@@ -5,7 +5,7 @@ Linn Songbox Remote Playlist to M3U conversion
 
 Creating playlists in Kinsky is great, I'd like to save them remotely which you can do if you use Linn's Songbox. Each track on the playlist is a URI which flexibly allows creating a playlist from multiple media servers additionally the URIs for the metadata is also stored along with the item in the playlist. This means if the URI changes by a mediaserver rescan or the metadata is changed, the track loses valuable information or is lost forever. However, converting to m3u requires reverse mapping a track URI to a local filepath. Luckily Minimserver uses a URI which can easily be converted back into a filepath. 
 
-These scripts convert a playlist of Minimserver served tracks, stored in a Remote Linn Songbox playlist to be converted to an m3u file. Once converted it is stored in a 'Playlists' folder which can be picked up by Minimserver when rescanned (which this script invokes). This allows your Linn Songbox playlists to be accessible from any device and protected against metadata and URI changes from your mediaserver. 
+These scripts convert a playlist of Minimserver served tracks, stored in a Remote Linn Songbox playlist to an m3u file. Once converted it is stored in a 'Playlists' folder which can be picked up by Minimserver when rescanned (which this script invokes). This allows your Linn Songbox playlists to be accessible from any device and protected against metadata and URI changes from your mediaserver. 
 
 This assumes the following configuration:
 
@@ -14,7 +14,7 @@ This assumes the following configuration:
 * Minimserver running on the same machine as the collection of music. 
 * Linn Songbox Installation - where its configuration storage is available from the Linux machine
 * Linn Songbox is used for storing playlists, but not serving music. This is because Songbox uses a random GUID whereas Minimserver uses a URI which can be converted back to a filepath. 
-* All music files are contained within a single root '/mnt/media/music/' 
+* All music files are contained within a single root
 * sb2m3u installed in /opt/sb2m3u
 
 WARNING
