@@ -3,7 +3,7 @@ WATCH_DIR=/home/barry/.config/Linn/Linn\ Songbox/Network/MediaServer/PlaylistMan
 MUSIC_DIR=/mnt/media/music/
 MUSIC_PLAYLISTS=$MUSIC_DIR/Playlists
 SCRIPTS=/opt/sb2m3u
-MINIMSERVER_URL=http://192.168.1.127:9790/index.html
+MINIMSERVER_URL=http://localhost:9790/index.html
 
 while 
 	find $MUSIC_PLAYLISTS -type f -name *.m3u -exec rm {} \;
