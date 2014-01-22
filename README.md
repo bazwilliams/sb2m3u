@@ -15,32 +15,32 @@ This assumes the following configuration:
 * Linn Songbox Installation - where its configuration storage is available from the Linux machine
 * Linn Songbox is used for storing playlists, but not serving music. This is because Songbox uses a random GUID whereas Minimserver uses a URI which can be converted back to a filepath. 
 * All music files are contained within a single root
-* sb2m3u installed in /opt/sb2m3u
+* sb2m3u installed in `/opt/sb2m3u`
 
 WARNING
 =======
 
-If you have an existing 'Playlists' folder under your music folder, m3u will be deleted by this script. This is to support deleting a remove Songbox playlist synchronising the m3u delete. 
+If you have an existing 'Playlists' folder under your music folder, m3u files will be deleted by this script. This is to support deleting a remote Songbox playlist synchronising the m3u delete. 
 
 INSTALLATION
 ============
 
-Copy convert_playlists.sh and sb2m3u.py into /opt/sb2m3u
-There is a service script in init which you can copy into /etc/init on Ubuntu - edit the script to use a correct username
+Copy `convert_playlists.sh` and `sb2m3u.py` into `/opt/sb2m3u`
+There is a service script in init which you can copy into `/etc/init` on Ubuntu - edit the script to use a correct username
 
 CONFIGURATION
 =============
 
-In convert_playlists.sh
+In `convert_playlists.sh`
 Configure:
-WATCH_DIR to point to your Songbox playlists folder
-MUSIC_DIR to point to the root of your music
+`WATCH_DIR` to point to your Songbox playlists folder
+`MUSIC_DIR` to point to the root of your music
 
 START
 =====
 If you have installed the service script:
-sudo service playlists start
+`sudo service playlists start`
 
 Otherwise:
-./convert_playlists.sh
+`/opt/sb2m3u/convert_playlists.sh`
 
