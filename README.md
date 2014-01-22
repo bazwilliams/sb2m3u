@@ -7,6 +7,8 @@ Creating playlists in Kinsky is great, I'd like to save them remotely which you 
 
 These scripts convert a playlist of Minimserver served tracks, stored in a Remote Linn Songbox playlist to an m3u file. Once converted it is stored in a 'Playlists' folder which can be picked up by Minimserver when rescanned (which this script invokes). This allows your Linn Songbox playlists to be accessible from any device and protected against metadata and URI changes from your mediaserver. 
 
+It will continue to watch changes in your Songbox mirroring new playlists, edits and deletes as m3u files. 
+
 This assumes the following configuration:
 
 * Linux Server
