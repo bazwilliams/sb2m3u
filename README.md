@@ -1,3 +1,5 @@
+**Please note this application has now been superceded by https://github.com/bazwilliams/upnp-playlist-service**
+
 sb2m3u
 ======
 
